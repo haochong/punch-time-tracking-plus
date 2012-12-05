@@ -9,40 +9,40 @@ Punch uses a punch clock metaphor to track where you are spending your time.
 
 For example, if your to-do list looks like this...
 
-$ t ls
-02 Call Steve about subcontracting gig @Steve +Acme
-03 Prepare invoices for February
-01 Prepare project proposal for Acme +Acme
---
-TODO: 3 tasks in C:/cygwin/home/Keith/todo/todo.txt.
+        $ t ls
+        02 Call Steve about subcontracting gig @Steve +Acme
+        03 Prepare invoices for February
+        01 Prepare project proposal for Acme +Acme
+        --
+        TODO: 3 tasks in C:/cygwin/home/Keith/todo/todo.txt.
 
 ...you would start keeping time for a given task like this:
 
-$ punch in 1
-Start timer on: Prepare project proposal for Acme +Acme
+        $ punch in 1
+        Start timer on: Prepare project proposal for Acme +Acme
 
 When switching your focus, simply punch in again:
 
-$ punch in 2
-Stop timer on: Prepare project proposal for Acme +Acme
-Start timer on: Call Steve about subcontracting gig @Steve +Acme
+        $ punch in 2
+        Stop timer on: Prepare project proposal for Acme +Acme
+        Start timer on: Call Steve about subcontracting gig @Steve +Acme
 
 And when finished, punch out:
 
-$ punch out
-Stop timer on: Call Steve about subcontracting gig @Steve +Acme
+        $ punch out
+        Stop timer on: Call Steve about subcontracting gig @Steve +Acme
 
 To get a report of what you have worked on, use the report command. Time spent on tasks is summed up daily.
 
-$ punch rep
-2009-03-12:
-        Prepare project proposal for Acme +Acme (22 minutes)
-2009-03-14:
-        Call Steve about subcontracting gig @Steve +Acme (0 minutes)
-        Prepare invoices for February (31 minutes)
-        Prepare project proposal for Acme +Acme (1 minutes)
-2009-03-16:
-        Prepare project proposal for Acme +Acme (1 minutes)
+        $ punch rep
+        2009-03-12:
+                Prepare project proposal for Acme +Acme (22 minutes)
+        2009-03-14:
+                Call Steve about subcontracting gig @Steve +Acme (0 minutes)
+                Prepare invoices for February (31 minutes)
+                Prepare project proposal for Acme +Acme (1 minutes)
+        2009-03-16:
+                Prepare project proposal for Acme +Acme (1 minutes)
 
 Punch requires Python. Punch is a work in progress. Feel free to suggest enhancements you'd like to see.
 
